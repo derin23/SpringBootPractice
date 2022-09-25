@@ -14,7 +14,8 @@ public class GreetingController {
     }
 
     @GetMapping("/add")
-    public String addNumbers(@RequestParam String a,@RequestParam String b){
+    @ResponseBody
+    public int addNumbers(@RequestParam int a,@RequestParam int b){
         return a + b;
     }
 }
