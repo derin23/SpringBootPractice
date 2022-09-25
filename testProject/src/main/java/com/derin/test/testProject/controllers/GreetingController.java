@@ -12,4 +12,9 @@ public class GreetingController {
 
         return "Hello from Derin!!";
     }
+
+    @GetMapping("/add")
+    public String addNumbers(@RequestParam String a,@RequestParam String b){
+        return a + b;
+    }
 }
